@@ -18,7 +18,7 @@ public class ConsumaDatoM extends Thread{
             }
 
             dato = App.buffer;
-            System.out.println("Lettore 2: dato letto: " + dato.getValore());
+            System.out.println("Lettore 2: dato letto: " + dato.getValore() + "\n");
             vuoto.v();
             if(ProduciDatoM.forI == (ProduciDatoM.tanti - 1)) {
                 System.out.println("ultimo valore letto 2");

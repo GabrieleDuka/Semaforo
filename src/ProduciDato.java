@@ -19,8 +19,8 @@ public class ProduciDato extends Thread{
                 e.printStackTrace();
             }
 
-            App.buffer.incrementa(1);;
-            System.out.println("Scrittore: dato scritto: " + i);
+            App.buffer.uguale(i);;
+            System.out.println("Scrittore: dato scritto: " + App.buffer.getValore());
             pieno.v();
             try{
                 Thread.sleep(attesa);

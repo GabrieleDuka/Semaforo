@@ -3,7 +3,7 @@ public class Contatore {
 
     public Contatore(int valore) {
         this.valore = valore;
-        System.out.println("Il contatore è nato e vale " + this.getValore());
+        System.out.println("Il contatore è nato e vale " + this.getValore() + "\n\n");
     }
     public int getValore() {
         return valore;
@@ -19,6 +19,6 @@ public class Contatore {
         valore = passo;
     }
     void raddoppia() {
-        valore *= 2;
+        valore += valore;
     }
 }

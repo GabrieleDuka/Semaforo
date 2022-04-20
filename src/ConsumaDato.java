@@ -18,10 +18,10 @@ public class ConsumaDato extends Thread{
             }
 
             dato = App.buffer;
-            System.out.println("Lettore: dato letto: " + dato.getValore());
+            System.out.println("Lettore: dato letto: " + dato.getValore() + "\n");
             vuoto.v();
             if(ProduciDato.forI == (ProduciDato.tanti - 1)) {
-                System.out.println("ultimo valore letto");
+                System.out.println("ultimo valore letto 1");
                 loop = false;
             }
         }

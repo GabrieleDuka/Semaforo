@@ -20,7 +20,7 @@ public class ProduciDatoM extends Thread{
             }
 
             App.buffer.raddoppia();
-            System.out.println("Scrittore 2: dato scritto: " + i);
+            System.out.println("Scrittore 2: dato scritto: " + App.buffer.getValore());
             pieno.v();
             try{
                 Thread.sleep(attesa);
