@@ -1,24 +1,25 @@
+import java.util.ArrayList;
+
 public class Contatore {
-    int valore;
+    ArrayList<Integer> valore;
+    int i = 0;
 
-    public Contatore(int valore) {
-        this.valore = valore;
-        System.out.println("Il contatore è nato e vale " + this.getValore() + "\n\n");
+    public Contatore() {
+        System.out.println("Il contatore è nato");
     }
-    public int getValore() {
-        return valore;
+    public int getValore(int index) {
+        return valore.get(index);
     }
 
-    void incrementa(int passo) {
-        valore += passo;
+    void incrementa() {
+        valore.set(i, 1);
+        System.out.println("Prodotto pos " + i + " = 1");
+        i++;
+        if(i > 9) {
+            i = 0;
+        }
     }
     void decrementa(int passo) {
-        valore -= passo;
-    }
-    void uguale(int passo) {
-        valore = passo;
-    }
-    void raddoppia() {
-        valore += valore;
+        valore.set(passo, 0);
     }
 }
